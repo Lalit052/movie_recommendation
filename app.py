@@ -14,7 +14,7 @@ if not os.path.exists("similarity.pkl"):
     url = "https://drive.google.com/uc?id=1qaWFXWnD5eZzeBTWhORuZvpeUlzGME1b"
     gdown.download(url, "similarity.pkl", quiet=False)
 
-# ✅ Load the pickles AFTER they're guaranteed to exist
+
 with open("movie_dict.pkl", "rb") as f:
     movies_dict = pickle.load(f)
 
